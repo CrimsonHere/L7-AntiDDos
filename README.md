@@ -1,34 +1,38 @@
 # L7-AntiDDoS
 
 ## Introduction
-Welcome to **L7 AntiDDoS**! Developed by Pc Principal#8752, this tool is designed to enhance web application security by mitigating Layer 7 DDoS attacks.
+Welcome to the **L7 AntiDDoS** repository! This robust tool, developed by Pc Principal#8752, is designed to enhance the security of web applications by mitigating Layer 7 DDoS attacks.
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Background](#background)
 - [Features](#features)
 - [Usage Instructions](#usage-instructions)
-- [Contributing](#contributing)
+- [Contribution](#contribution)
 - [License](#license)
 - [Contact](#contact)
 
+## Background
+Developed about a month ago, L7 AntiDDoS was initially planned for release with additional features like header verification and Turnstile integration. The decision to release it publicly was motivated by an incident involving a beta tester.
+
 ## Features
-- Basic DDoS Protection
-- (Upcoming) Header Verification
-- (Upcoming) Turnstile Integration
+- **Basic DDoS Protection**: Protects against Layer 7 DDoS attacks.
+- **(Upcoming) Header Verification**: Enhances security through request validation.
+- **(Upcoming) Turnstile Integration**: Incorporates advanced bot management.
 
 ## Usage Instructions
-1. **Setup Node.js Environment**: Ensure Node.js is installed on your system.
-2. **Clone the Repository**: Use `git clone` to clone this repository.
+1. **Setup Node.js Environment**: Install Node.js from the [official website](https://nodejs.org/).
+2. **Clone the Repository**: Clone the repository using `git clone`.
 3. **Install Dependencies**: Run `npm install express request-ip`.
-4. **Configure SSL/TLS**: Update your private key and certificate paths in the script.
-5. **Run the Server**: Execute the script with `node yourScriptName.js`.
-6. **Monitor and Maintain**: Adjust settings and monitor performance.
+4. **Configure SSL/TLS**: Place your private key and certificate in the specified directory, updating the file paths in the script.
+5. **Run the Server**: Start the server with `node yourScriptName.js`.
+6. **Adjust Rate Limiting**: Modify `MAX_REQUESTS_PER_SECOND` and `MAX_CONNECTIONS_PER_IP` as needed.
 
-## Contributing
-Contributions are welcome! Feel free to fork the repository and submit a pull request.
+## Contribution
+We welcome contributions to improve L7 AntiDDoS. Fork the repository, make your changes, and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-This project is licensed under the [GNU General Public License v3.0](LICENSE).
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See the [LICENSE](LICENSE) file for more details.
 
 ## Contact
-For inquiries or contributions, reach out to Pc Principal#8752.
+For any inquiries or contributions, feel free to reach out to Pc Principal#8752.
