@@ -5,15 +5,15 @@ Welcome to the **L7 AntiDDoS** repository! This robust tool, developed by Pc Pri
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Background](#background)
+- [Motivation for Release](#MotivationforRelease)
 - [Features](#features)
 - [Usage Instructions](#usage-instructions)
 - [Contribution](#contribution)
 - [License](#license)
 - [Contact](#contact)
 
-## Background
-Developed about a month ago, L7 AntiDDoS was initially planned for release with additional features like header verification and Turnstile integration. The decision to release it publicly was motivated by an incident involving a beta tester.
+## MotivationforRelease
+In light of a recent incident where an individual tested the beta version and then claimed ownership without providing any substantial improvements, I've decided to release the project publicly. This move ensures the community has access to the genuine and original version of L7 AntiDDoS, maintaining the integrity and authenticity of the work.
 
 ## Features
 - **Basic DDoS Protection**: Protects against Layer 7 DDoS attacks.
