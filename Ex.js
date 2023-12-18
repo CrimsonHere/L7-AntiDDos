@@ -106,13 +106,15 @@ function urlsanitizer(req, res, next) {
 function checkForPatterns(str)
 {
     // Define regular expression patterns to detect suspicious strings
-    const pattern1 = /=([0-9]{9,})/;
-    const pattern2 = /([0-9]{12,})=([0-9]{12,})/;
-    const pattern3 = /[0-9]{0,18}[a-zA-Z0-9]{3}[0-9]{18}[a-zA-Z0-9]{1}/;
-    const pattern4 = /\/[0-9]{10,19}/;
-
+    const patterns = 
+    [
+        /=([0-9]{9,})/,
+        /([0-9]{12,})=([0-9]{12,})/,
+        /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]+$/,
+        /[0-9]{0,18}[a-zA-Z0-9]{3}[0-9]{18}[a-zA-Z0-9]{1}/
+    ];
     // Test the string against each pattern
-    return pattern1.test(str) || pattern2.test(str) || pattern3.test(str) || pattern4.test(str);
+    return patterns.some(pattern => pattern.test(str));
 }
 
 // I will be adding more for stuff like headers verifacation and IP Abuse rating when I fell like it.
