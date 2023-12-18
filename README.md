@@ -17,6 +17,7 @@ In light of a recent incident where an individual tested the beta version and th
 
 ## Features
 - **Basic DDoS Protection**: Protects against Layer 7 DDoS attacks.
+- **URL Sanitization**: Implements custom middleware for filtering suspicious query parameters and paths.
 - **(Upcoming) Header Verification**: Enhances security through request validation.
 - **(Upcoming) Turnstile Integration**: Incorporates advanced bot management.
 
